@@ -1,3 +1,82 @@
+
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
+local Drop_Shadow = Instance.new("ImageLabel")
+local Drop_Shadow_2 = Instance.new("ImageLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.437397063, 0, 0.345808387, 0)
+Frame.Size = UDim2.new(0, 100, 0, 100)
+Frame.Active = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=12802092295"
+
+UICorner.Parent = ImageLabel
+
+UICorner_2.Parent = Frame
+
+Drop_Shadow.Name = "Drop_Shadow"
+Drop_Shadow.Parent = Frame
+Drop_Shadow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Drop_Shadow.BackgroundTransparency = 1.000
+Drop_Shadow.Position = UDim2.new(0, -36, 0, -37)
+Drop_Shadow.Size = UDim2.new(1.73263621, 1, 1.7637614, 1)
+Drop_Shadow.ZIndex = -5
+Drop_Shadow.Image = "rbxassetid://1113384364"
+Drop_Shadow.ImageTransparency = 0.200
+Drop_Shadow.ScaleType = Enum.ScaleType.Slice
+Drop_Shadow.SliceCenter = Rect.new(50, 50, 50, 50)
+
+Drop_Shadow_2.Name = "Drop_Shadow"
+Drop_Shadow_2.Parent = Frame
+Drop_Shadow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Drop_Shadow_2.BackgroundTransparency = 1.000
+Drop_Shadow_2.Position = UDim2.new(0, -36, 0, -37)
+Drop_Shadow_2.Size = UDim2.new(1.73263621, 1, 1.7637614, 1)
+Drop_Shadow_2.ZIndex = -5
+Drop_Shadow_2.Image = "rbxassetid://1113384364"
+Drop_Shadow_2.ImageTransparency = 0.200
+Drop_Shadow_2.ScaleType = Enum.ScaleType.Slice
+Drop_Shadow_2.SliceCenter = Rect.new(50, 50, 50, 50)
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-0.180000007, 0, 1, 0)
+TextLabel.Size = UDim2.new(0, 135, 0, 50)
+TextLabel.Font = Enum.Font.SourceSansBold
+TextLabel.Text = "Loading . . ."
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+
+wait(4.5)
+
+
+Frame.Visible = false
+
+
+
 --Made By S.#0094
 
 
