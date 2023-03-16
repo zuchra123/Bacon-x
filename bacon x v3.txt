@@ -2663,7 +2663,63 @@ end)
         game.Players.LocalPlayer.Character:WaitForChild("FULLY_LOADED_CHAR")
         Fly()
 end)
-						
+
+
+
+
+
+MainSection:NewButton("NoClip", "Now Exploiter Cant Fling ", function()
+    
+     game.StarterGui:SetCore("SendNotification", {Title = "Bacon X ", Text = "Noclip Loaded", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "OK"})
+    
+    local Sound = Instance.new("Sound", workspace)
+Sound.SoundId = "rbxassetid://1092093337"
+Sound:Play()
+
+ 
+
+power = 20 -- change this to make it more or less powerful
+
+game:GetService('RunService').Stepped:connect(function()
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end)
+wait(.1)
+
+end)
+
+MainSection:NewButton("Fe Spin", "Now Exploiter Cant Fling ", function()
+    
+     game.StarterGui:SetCore("SendNotification", {Title = "Bacon X ", Text = "Spin Loaded", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "OK"})
+    
+    local Sound = Instance.new("Sound", workspace)
+Sound.SoundId = "rbxassetid://1092093337"
+Sound:Play()
+
+  
+
+power = 50 -- change this to make it more or less powerful
+
+game:GetService('RunService').Stepped:connect(function()
+game.Players.LocalPlayer.Character.Head.CanCollide = false
+game.Players.LocalPlayer.Character.UpperTorso.CanCollide = false
+game.Players.LocalPlayer.Character.LowerTorso.CanCollide = false
+game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+end)
+wait(.1)
+local bambam = Instance.new("BodyThrust")
+bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+bambam.Force = Vector3.new(power,0,power)
+bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position
+
+
+end)
+
+
+
+
 extraSection:NewKeybind("Toggle Gui", "hide script", Enum.KeyCode.F, function()
 Library:ToggleUI()
 end)
